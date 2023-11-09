@@ -1,1 +1,3 @@
-# daily_work
+# Daily Note
+
+## This is CY's daily note
