@@ -5,6 +5,7 @@ project(cy_daily VERSION 1.0)
 
 # Define build options
 option(BUILD_HASH "Build hash cpp" ON)
+option(BUILD_DOUBLE_POINTER "Build double pointer cpp" ON)
 option(BUILD_DEBUG "Enable gcc -g option" ON)
 
 # Specify the C++ standard
@@ -47,4 +48,10 @@ if(BUILD_HASH)
     add_executables_from_subdirectory(hash)
     message(STATUS "Build hash test")
 endif()
+
+if(BUILD_DOUBLE_POINTER)
+    add_executables_from_subdirectory(double_pointer)
+    message(STATUS "Build double pointer test")
+endif()
+
 
