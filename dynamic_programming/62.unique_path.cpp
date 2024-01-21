@@ -1,8 +1,8 @@
+#include <glibc_wrapper.hpp>
 class Solution {
 public:
     int uniquePaths(int m, int n) {
-        vector<int> row(n, 0);
-        vector<vector<int>> dp(m, row);
+        vector<vector<int>> dp(m, vector<int>(n, 0));
         for(int i = 0; i < m; i++) {
             dp[i][0] = 1;
         }
@@ -17,3 +17,7 @@ public:
         return dp[m-1][n-1];
     }
 };
+
+int main() {
+    return 0;
+}

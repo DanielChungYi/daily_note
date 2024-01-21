@@ -1,3 +1,4 @@
+#include <glibc_wrapper.hpp>
 class Solution {
 public:
     int fib(int n) {
@@ -14,3 +15,8 @@ public:
     }
 };
 
+int main() {
+    Solution s;
+    std::cout << s.fib(5);
+    return 0;
+}

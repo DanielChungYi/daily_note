@@ -1,3 +1,4 @@
+#include <glibc_wrapper.hpp>
 class Solution {
 public:
     int minCostClimbingStairs(vector<int>& cost) {
@@ -11,3 +12,7 @@ public:
         return dp[s];
     }
 };
+
+int main() {
+    return 0;
+}
